@@ -31,7 +31,7 @@ class Library(list):
         for book in self:
             if book['reader'] == reader:
                 count += 1
-        if count <= 3:
+        if count < 3:
             for book in self:
                 if book['title'] == title and book['reader'] == "NN":
                     book['reader'] = reader
